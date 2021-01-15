@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CAppInfoViewController" customModule="CatFrida" customModuleProvider="target">
+            <connections>
+                <outlet property="infoTextField" destination="xKY-w6-ZTF" id="9Cy-VX-9QW"/>
+                <outlet property="pathTextField" destination="uIB-QH-fpU" id="7zi-lL-Pcp"/>
+                <outlet property="textView" destination="Wpr-hg-K4w" id="Mzd-wM-NCt"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6u-Oz-Zps">
+                    <rect key="frame" x="16" y="12" width="768" height="298"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="oY0-rH-H2I">
+                        <rect key="frame" x="0.0" y="0.0" width="753" height="298"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Wpr-hg-K4w">
+                                <rect key="frame" x="0.0" y="0.0" width="753" height="298"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="753" height="298"/>
+                                <size key="maxSize" width="925" height="10000000"/>
+                                <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            </textView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="9bW-jd-L7Z">
+                        <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="g7F-O0-XkF">
+                        <rect key="frame" x="753" y="0.0" width="15" height="298"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <box title="Info" translatesAutoresizingMaskIntoConstraints="NO" id="0yv-k0-8EK">
+                    <rect key="frame" x="11" y="464" width="772" height="104"/>
+                    <view key="contentView" id="HcD-nY-B9a">
+                        <rect key="frame" x="3" y="3" width="766" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xKY-w6-ZTF">
+                                <rect key="frame" x="18" y="0.0" width="730" height="72"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="name" id="sjK-Li-86G">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xKY-w6-ZTF" secondAttribute="bottom" id="4VP-ip-aMs"/>
+                            <constraint firstItem="xKY-w6-ZTF" firstAttribute="top" secondItem="HcD-nY-B9a" secondAttribute="top" constant="8" id="6N2-ud-iIH"/>
+                            <constraint firstAttribute="trailing" secondItem="xKY-w6-ZTF" secondAttribute="trailing" constant="20" symbolic="YES" id="Owo-Vn-ebe"/>
+                            <constraint firstItem="xKY-w6-ZTF" firstAttribute="leading" secondItem="HcD-nY-B9a" secondAttribute="leading" constant="20" symbolic="YES" id="Tip-2S-ng3"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="akz-py-RS6"/>
+                    </constraints>
+                    <font key="titleFont" metaFont="systemBold" size="16"/>
+                </box>
+                <box title="File Path" translatesAutoresizingMaskIntoConstraints="NO" id="igA-UE-hYE">
+                    <rect key="frame" x="11" y="327" width="772" height="125"/>
+                    <view key="contentView" id="ShF-eN-z5I">
+                        <rect key="frame" x="3" y="3" width="766" height="101"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uIB-QH-fpU">
+                                <rect key="frame" x="18" y="0.0" width="738" height="93"/>
+                                <textFieldCell key="cell" alignment="left" title="name" id="MRE-S9-RVY">
+                                    <font key="font" size="13" name="Menlo-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uIB-QH-fpU" secondAttribute="bottom" id="RsW-d0-KNQ"/>
+                            <constraint firstItem="uIB-QH-fpU" firstAttribute="leading" secondItem="ShF-eN-z5I" secondAttribute="leading" constant="20" symbolic="YES" id="Z7R-cD-mj8"/>
+                            <constraint firstAttribute="trailing" secondItem="uIB-QH-fpU" secondAttribute="trailing" constant="12" id="ZdK-MM-Abv"/>
+                            <constraint firstItem="uIB-QH-fpU" firstAttribute="top" secondItem="ShF-eN-z5I" secondAttribute="top" constant="8" id="dzF-St-jDW"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="121" id="XVf-U1-8Zr"/>
+                    </constraints>
+                    <font key="titleFont" metaFont="systemBold" size="16"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="igA-UE-hYE" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="14" id="2uZ-La-IFE"/>
+                <constraint firstItem="M6u-Oz-Zps" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="16" id="CaX-ok-ZfS"/>
+                <constraint firstAttribute="trailing" secondItem="igA-UE-hYE" secondAttribute="trailing" constant="20" symbolic="YES" id="DO0-Pr-Xbh"/>
+                <constraint firstAttribute="trailing" secondItem="M6u-Oz-Zps" secondAttribute="trailing" constant="16" id="KKI-hU-j2m"/>
+                <constraint firstItem="0yv-k0-8EK" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="32" id="Lk4-3L-9al"/>
+                <constraint firstAttribute="bottom" secondItem="M6u-Oz-Zps" secondAttribute="bottom" constant="12" id="NjQ-Fd-tgb"/>
+                <constraint firstAttribute="trailing" secondItem="0yv-k0-8EK" secondAttribute="trailing" constant="20" symbolic="YES" id="Z3h-yQ-bSC"/>
+                <constraint firstItem="M6u-Oz-Zps" firstAttribute="top" secondItem="igA-UE-hYE" secondAttribute="bottom" constant="21" id="b3U-nK-UcG"/>
+                <constraint firstItem="0yv-k0-8EK" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="14" id="jji-Ao-tqq"/>
+                <constraint firstItem="igA-UE-hYE" firstAttribute="top" secondItem="0yv-k0-8EK" secondAttribute="bottom" constant="16" id="xCj-Yc-253"/>
+            </constraints>
+            <point key="canvasLocation" x="-284" y="161"/>
+        </customView>
+    </objects>
+</document>
