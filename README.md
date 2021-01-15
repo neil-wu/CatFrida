@@ -5,7 +5,7 @@ CatFrida is a macOS tool for inspecting a running iOS app.
 
 Building with [frida-swift](https://github.com/frida/frida-swift), CatFrida provide an awesome easy way to dive into an app.
 
-[Download CatFrida.app]()
+[Download CatFrida.app](https://github.com/neil-wu/CatFrida/releases)
 
 [Screenshots](./Screenshots/)
 
