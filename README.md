@@ -34,6 +34,11 @@ You need a jailbroken iOS device with frida server installed. Check the followin
 
 Enjoy :)
 
+The application is not code-signed. You can sign it manually.
+```
+xcode-select --install
+codesign --force --deep --sign - /Applications/CatFrida.app
+```
 
 ## Build
 
