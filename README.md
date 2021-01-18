@@ -26,11 +26,12 @@ Building with [frida-swift](https://github.com/frida/frida-swift), CatFrida prov
 
 ## Usage
 
-You need a jailbroken iOS device with frida server installed. Check the following link to see [how to install frida on jailbroken device?](https://frida.re/docs/ios/#with-jailbreak)
+1. A jailbroken iOS device with `frida server` installed
+Check the following link to see [how to install frida on jailbroken device?](https://frida.re/docs/ios/#with-jailbreak)
 
-1. Connect your jailbroken iOS device with macbook
+2. Connect your jailbroken iOS device with macbook
 
-2. Run CatFrida.app
+3. Run CatFrida.app
 
 Enjoy :)
 
