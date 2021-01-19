@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610736A925B6802500A3CF3A /* CAppCookiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610736A725B6802500A3CF3A /* CAppCookiesViewController.swift */; };
+		610736AA25B6802500A3CF3A /* CAppCookiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610736A825B6802500A3CF3A /* CAppCookiesViewController.xib */; };
+		610736BF25B68EEA00A3CF3A /* CAppKeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610736BD25B68EEA00A3CF3A /* CAppKeychainViewController.swift */; };
+		610736C025B68EEA00A3CF3A /* CAppKeychainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610736BE25B68EEA00A3CF3A /* CAppKeychainViewController.xib */; };
+		610736C425B6A79B00A3CF3A /* CAppUserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610736C225B6A79B00A3CF3A /* CAppUserDefaultsViewController.swift */; };
+		610736C525B6A79B00A3CF3A /* CAppUserDefaultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610736C325B6A79B00A3CF3A /* CAppUserDefaultsViewController.xib */; };
 		61237F0225A6F75B00E09B77 /* CModuleSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61237F0025A6F75B00E09B77 /* CModuleSymbolViewController.swift */; };
 		61237F0325A6F75B00E09B77 /* CModuleSymbolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61237F0125A6F75B00E09B77 /* CModuleSymbolViewController.xib */; };
 		61237F0725A70C7500E09B77 /* CAppRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61237F0525A70C7500E09B77 /* CAppRuntimeViewController.swift */; };
@@ -88,6 +94,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		610736A725B6802500A3CF3A /* CAppCookiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAppCookiesViewController.swift; sourceTree = "<group>"; };
+		610736A825B6802500A3CF3A /* CAppCookiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAppCookiesViewController.xib; sourceTree = "<group>"; };
+		610736BD25B68EEA00A3CF3A /* CAppKeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAppKeychainViewController.swift; sourceTree = "<group>"; };
+		610736BE25B68EEA00A3CF3A /* CAppKeychainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAppKeychainViewController.xib; sourceTree = "<group>"; };
+		610736C225B6A79B00A3CF3A /* CAppUserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAppUserDefaultsViewController.swift; sourceTree = "<group>"; };
+		610736C325B6A79B00A3CF3A /* CAppUserDefaultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CAppUserDefaultsViewController.xib; sourceTree = "<group>"; };
 		61237F0025A6F75B00E09B77 /* CModuleSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CModuleSymbolViewController.swift; sourceTree = "<group>"; };
 		61237F0125A6F75B00E09B77 /* CModuleSymbolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CModuleSymbolViewController.xib; sourceTree = "<group>"; };
 		61237F0525A70C7500E09B77 /* CAppRuntimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAppRuntimeViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +189,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610736A625B6800A00A3CF3A /* Cookies */ = {
+			isa = PBXGroup;
+			children = (
+				610736A725B6802500A3CF3A /* CAppCookiesViewController.swift */,
+				610736A825B6802500A3CF3A /* CAppCookiesViewController.xib */,
+			);
+			path = Cookies;
+			sourceTree = "<group>";
+		};
+		610736BC25B68EC500A3CF3A /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				610736BD25B68EEA00A3CF3A /* CAppKeychainViewController.swift */,
+				610736BE25B68EEA00A3CF3A /* CAppKeychainViewController.xib */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		610736C125B6A78400A3CF3A /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				610736C225B6A79B00A3CF3A /* CAppUserDefaultsViewController.swift */,
+				610736C325B6A79B00A3CF3A /* CAppUserDefaultsViewController.xib */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		61237EFF25A6F72E00E09B77 /* Symbol */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +411,9 @@
 				61237EFF25A6F72E00E09B77 /* Symbol */,
 				61DEF57124C6C39400553E85 /* Document */,
 				61DEF57C24CA81DF00553E85 /* Network */,
+				610736C125B6A78400A3CF3A /* UserDefaults */,
+				610736BC25B68EC500A3CF3A /* Keychain */,
+				610736A625B6800A00A3CF3A /* Cookies */,
 				61DEF58524CAC0D700553E85 /* Custom */,
 				61237F0B25A7F9DD00E09B77 /* Debug */,
 			);
@@ -512,7 +554,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				616108D625AD4DBC00964108 /* CAppUIViewController.xib in Resources */,
+				610736C525B6A79B00A3CF3A /* CAppUserDefaultsViewController.xib in Resources */,
 				61237F0325A6F75B00E09B77 /* CModuleSymbolViewController.xib in Resources */,
+				610736C025B68EEA00A3CF3A /* CAppKeychainViewController.xib in Resources */,
+				610736AA25B6802500A3CF3A /* CAppCookiesViewController.xib in Resources */,
 				61DEF57724C6E2A400553E85 /* CAppInfoViewController.xib in Resources */,
 				61DEF57324C6CD6200553E85 /* _agent.js in Resources */,
 				61DEF56A24C6BFFB00553E85 /* CAppModuleViewController.xib in Resources */,
@@ -591,10 +636,12 @@
 				61DEF57924C8236200553E85 /* CDownloadTask.swift in Sources */,
 				6161095125B032AD00964108 /* SignalConnection.swift in Sources */,
 				61DEF57F24CA820700553E85 /* CAppNetworkViewController.swift in Sources */,
+				610736A925B6802500A3CF3A /* CAppCookiesViewController.swift in Sources */,
 				61DEF59624CADDFB00553E85 /* NWShellTask.swift in Sources */,
 				6161095325B032AD00964108 /* Marshal.swift in Sources */,
 				616108D525AD4DBC00964108 /* CAppUIViewController.swift in Sources */,
 				61237F0725A70C7500E09B77 /* CAppRuntimeViewController.swift in Sources */,
+				610736BF25B68EEA00A3CF3A /* CAppKeychainViewController.swift in Sources */,
 				6194C83125ABF9990008D8AA /* CAppRpc.swift in Sources */,
 				61DEF4FC24C057E900553E85 /* AppDelegate.swift in Sources */,
 				61DEF56D24C6C22E00553E85 /* CAppDocumentViewController.swift in Sources */,
@@ -609,6 +656,7 @@
 				6161095E25B032AD00964108 /* ProcessDetails.swift in Sources */,
 				61DEF58424CABABA00553E85 /* Config.swift in Sources */,
 				61DEF55724C532E400553E85 /* CMessage.swift in Sources */,
+				610736C425B6A79B00A3CF3A /* CAppUserDefaultsViewController.swift in Sources */,
 				6161095925B032AD00964108 /* RpcFunction.swift in Sources */,
 				61DEF54624C183C800553E85 /* CFridaHelper.swift in Sources */,
 				6161095B25B032AD00964108 /* AsyncOperation.swift in Sources */,
@@ -784,6 +832,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CatFrida/FridaBridge/CFrida/macos-x86_64",
 				);
+				MARKETING_VERSION = 1.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -833,6 +882,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CatFrida/FridaBridge/CFrida/macos-x86_64",
 				);
+				MARKETING_VERSION = 1.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

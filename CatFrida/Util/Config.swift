@@ -10,5 +10,11 @@ import Foundation
 import Cocoa
 
 struct Config {
-    static let codeFont: NSFont = NSFont(name: "Consolas", size: 14) ?? NSFont.systemFont(ofSize: 14)
+    static var codeFont: NSFont {
+        return codeFont(of: 14)
+    }
+    
+    static func codeFont(of size: CGFloat) -> NSFont {
+        return NSFont(name: "Consolas", size: size) ?? NSFont.systemFont(ofSize: size)
+    }
 }

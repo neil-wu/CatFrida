@@ -24,7 +24,10 @@ enum CAppRpc {
     case exports(module: String)
     case imports(module: String)
     
+    case cookies
     case dumpWindow
+    case dumpKeyChain
+    case userDefaults
     
     var rpcFuncName: String {
         switch self {
@@ -40,7 +43,10 @@ enum CAppRpc {
         case .download(_): return "download"
         case .exports(_): return "exports"
         case .imports(_): return "imports"
+        case .cookies: return "cookies"
         case .dumpWindow: return "dumpWindow"
+        case .dumpKeyChain: return "dumpKeyChain"
+        case .userDefaults: return "userDefaults"
         }
     }
     var rpcFuncArgs:[Any] {

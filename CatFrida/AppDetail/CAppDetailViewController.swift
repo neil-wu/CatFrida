@@ -16,10 +16,13 @@ fileprivate enum Entrys {
     case info
     case module
     case document
+    case cookies
     case network
     //case log
     case runtime
     case ui
+    case userdefaults
+    case keychain
     case custom
     
     static func rootEntrys()-> [Entrys] {
@@ -27,7 +30,7 @@ fileprivate enum Entrys {
     }
     
     static func childEntrys()-> [Entrys] {
-        return [.info, .module, .document, .runtime, .ui, .network, .custom];
+        return [.info, .module, .document, .runtime, .ui, .cookies, .network, .userdefaults, .keychain, .custom];
     }
     
     var title: String {
@@ -39,10 +42,13 @@ fileprivate enum Entrys {
         case .info: return "Info";
         case .module: return "Module";
         case .document: return "Document";
+        case .cookies: return "Cookies"
         case .network: return "AlamofireNetwork";
         //case .log: return "Log";
         case .runtime: return "Runtime"
         case .ui: return "UI"
+        case .userdefaults: return "UserDefaults"
+        case .keychain: return "Keychain"
         case .custom: return "Custom";
         }
     }
@@ -272,11 +278,15 @@ extension CAppDetailViewController: NSOutlineViewDataSource, NSOutlineViewDelega
         case .info: return CAppInfoViewController();
         case .module: return CAppModuleViewController();
         case .document: return CAppDocumentViewController();
+        case .cookies: return CAppCookiesViewController();
         case .network: return CAppNetworkViewController();
         case .runtime: return CAppRuntimeViewController()
         case .ui: return CAppUIViewController()
         case .custom: return CAppCustomScriptViewController();
+        case .userdefaults: return CAppUserDefaultsViewController()
+        case .keychain: return CAppKeychainViewController()
         default:
+            print("!! unknow content view", entry.title)
             return nil;
         }
     }
