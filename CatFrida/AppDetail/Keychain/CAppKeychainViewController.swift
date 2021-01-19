@@ -141,11 +141,11 @@ extension CAppKeychainViewController: NSTableViewDataSource, NSTableViewDelegate
     
     @objc func onClassRowClick() {
         let row = tableView.selectedRow
-        if let obj = rawDataList?.object(at: row) {
-            detailTextView.string = "\(obj)"
+        guard let rawDataList = rawDataList, row < rawDataList.count else {
+            return
         }
-        
-        
+        let obj = rawDataList[row]
+        detailTextView.string = "\(obj)"
         
     }
 }

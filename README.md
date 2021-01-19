@@ -1,4 +1,8 @@
 
+
+<img src="./Screenshots/banner.png" alt="CatFrida">
+
+
 ## CatFrida
 
 CatFrida is a macOS tool for inspecting a running iOS app.
@@ -20,6 +24,9 @@ Building with [frida-swift](https://github.com/frida/frida-swift), CatFrida prov
 - [x] Download app files
 - [x] Class dump
 - [x] UI description
+- [x] App Cookies dump
+- [x] Keychain dump
+- [x] UserDefaults dump
 - [x] Capture Alamofire HTTP requests
 - [x] Support load custom script
 
