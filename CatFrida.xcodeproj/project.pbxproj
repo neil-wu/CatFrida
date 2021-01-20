@@ -832,6 +832,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CatFrida/FridaBridge/CFrida/macos-x86_64",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -882,6 +883,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CatFrida/FridaBridge/CFrida/macos-x86_64",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",

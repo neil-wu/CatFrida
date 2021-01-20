@@ -40,7 +40,11 @@ final class CDownloadTask {
             } else {
                 FileManager.default.createFile(atPath: localUrl.path, contents: nil, attributes: nil);
             }
-            try fileHandle?.close();
+            if #available(OSX 10.15, *) {
+                try fileHandle?.close()
+            } else {
+                fileHandle?.closeFile()
+            };
             fileHandle = try FileHandle(forWritingTo: localUrl);
         } catch {
             Log("fail to open file at \(self.localUrl), err \(error.localizedDescription)");
@@ -63,7 +67,12 @@ final class CDownloadTask {
     
     func endWrite() {
         do {
-            try self.fileHandle?.close();
+            if #available(OSX 10.15, *) {
+                try self.fileHandle?.close()
+            } else {
+                // Fallback on earlier versions
+                fileHandle?.closeFile()
+            };
             self.delegate?.downloadTaskDone(success: true, errstr: nil);
         } catch {
             Log("fail to close file \(self.localUrl), err \(error.localizedDescription)");
